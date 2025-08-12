@@ -1,0 +1,14 @@
+/* 
+
+Create a C# service class in ASP.NET Core to integrate with a third-party payment API.
+
+Requirements:
+- Implement three methods: 
+    - ProcessPaymentAsync(PaymentRequest): sends payment data and returns the API response.
+    - RefundPaymentAsync(paymentId): issues a refund for the provided payment ID.
+    - GetPaymentStatusAsync(paymentId): fetches the payment status from the API.
+
+- Use HttpClient to make HTTP requests with proper timeout and retry logic using Polly.
+- Ensure all responses are mapped to a PaymentResponse model with Success, ErrorMessage, and Status.
+- Include structured error handling for API and network failures.
+- Log all input/output and errors using ILogger for audit trail purposes.  */

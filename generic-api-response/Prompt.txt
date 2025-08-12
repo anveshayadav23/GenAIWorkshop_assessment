@@ -1,0 +1,20 @@
+/*
+Include XML documentation comments for every class, property, and method.
+Use System.Text.Json.Serialization attributes to control JSON property names.
+The class should have:
+bool Success (indicates if request succeeded)
+string Message (describes the result)
+string ErrorCode (optional error code for failed responses)
+T Data (generic type for the API response data)
+DateTime Timestamp (auto-set to UTC time)
+Guid RequestId (auto-generated)
+PaginationInfo Pagination (nullable, contains pageNumber, pageSize, totalRecords)
+Include a nested class PaginationInfo with JSON property names for each field.
+Add three static factory methods:
+Success(T data, string message = null) → returns success response without pagination
+Error(string message, string errorCode = null, T data = default) → returns error response
+WithPagination(T data, int pageNumber, int pageSize, int totalRecords, string message = null) → returns success response with pagination details
+Use [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] for Pagination property.
+Ensure clean code formatting and readability.
+
+*/

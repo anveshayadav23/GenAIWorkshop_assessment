@@ -1,0 +1,14 @@
+// Create a secure authentication service layer in ASP.NET Core.
+//
+// Define ILoginService with:
+// - AuthResult Login(string username, string password)
+// - void Logout(string token)
+// - bool ValidateToken(string token)
+//
+// Implement in LoginService using JWT with role claims.
+// Use User model: Username, PasswordHash, Role.
+// Apply password hashing (no plain-text).
+// Include role-based checks.
+// Create AuthResult model to return token + messages.
+// Handle errors with custom AuthException.
+// Keep auth logic out of controllers (service layer only).

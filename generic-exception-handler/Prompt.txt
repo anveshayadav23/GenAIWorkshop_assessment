@@ -1,0 +1,12 @@
+/*
+Build a global exception handling middleware in ASP.NET Core.
+
+Requirements:
+- Centralized handling for validation errors, business logic exceptions, and unhandled system errors.
+- Map exceptions to HTTP 400, 422, and 500 with a consistent JSON response format:
+  { "success": false, "message": "User-friendly error", "details": "Optional debug info" }
+- Log all exceptions with stack traces using ILogger.
+- Provide custom exception classes for validation and business logic errors.
+- Ensure middleware is registered globally in Program.cs so it applies to all requests.
+
+*/

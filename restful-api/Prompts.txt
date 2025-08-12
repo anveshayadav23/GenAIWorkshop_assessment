@@ -1,0 +1,32 @@
+/*
+Generate a complete ASP.NET Core Web API controller for a "Product" entity with the following requirements:
+
+Supports full CRUD operations using RESTful principles:
+   - GET all products
+   - GET product by ID
+   - POST a new product
+   - PUT to update a product by ID
+   - DELETE a product by ID
+
+Returns appropriate HTTP status codes:
+   - 200 OK
+   - 201 Created
+   - 204 NoContent
+   - 400 BadRequest
+   - 404 NotFound
+   - 500 InternalServerError
+
+Uses [ApiController], [Route("api/[controller]")], and method-level HTTP annotations like [HttpGet], [HttpPost], etc.
+
+Includes model validation with [Required], [FromBody], and validation error handling using ModelState.
+
+Handles errors gracefully with try-catch blocks and provides meaningful error messages.
+
+Uses an in-memory list for product storage (no database connection needed).
+
+The Product class should have:
+   - Id (int)
+   - Name (string, required)
+   - Price (decimal, required)
+   - Description (string, optional)
+*/
